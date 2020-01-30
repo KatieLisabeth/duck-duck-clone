@@ -171,3 +171,61 @@ aside#sidebar {
 .img-container {
     display: block;
 }
+#box-section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.box-container {
+     text-align: center;
+     color: #353748;
+     hyphens: auto;
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font: inherit;
+     font-size: 100%;
+     vertical-align: baseline;
+     box-sizing: border-box;
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     max-width: 1250px;
+     min-height: 340px;
+}
+
+.box-header {
+    font-weight: 800;
+    color: #eee;
+} 
+
+ #boxes {
+     margin-top: 20px;
+ }
+
+ .box {
+    text-align: center;
+    hyphens: auto;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    width: 330px;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 17.5px;
+    padding: 20px 25px;
+    border-radius: 18px;
+    border: 1px solid #282828;
+    background: #282828;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    color: #cccccc;
+    margin-right: 0;
+     
+  }
