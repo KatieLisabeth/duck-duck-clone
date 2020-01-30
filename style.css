@@ -34,3 +34,68 @@ nav ul li {
     font-size: 25px;
     padding: 8px 20px;
 }
+#logo-wrap {
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+    margin: 0 0 20px;
+}
+
+#logo-homepage {
+    width: 250px;
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+    flex-basis: auto;
+    margin: 0 0 20px;
+}
+form {
+    padding: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.search-box {
+    border-radius: 4px 0px 0px 4px;
+    min-width: 26px;
+    background-color: #333;
+    color: #999;
+    font-size: 1.25em;
+    padding: 0 .64em;
+    width: 50%;
+    height: auto;
+    min-height: 1.8em;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    margin-right: -3px;
+    line-height: 1.5em;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border: none;
+}
+  
+.search-button {
+    
+    border-radius: 0px 4px 4px 0px;
+    min-width: 26px;
+    background-color: #333;
+    color: #999;
+    font-size: 1.25em;
+    padding: 0 .64em;
+    height: auto;
+    min-height: 1.8em;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    margin-right: 0;
+    line-height: 1.5em;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.search-button:hover {
+    background-color: #565756;
+    color: white;
+   
