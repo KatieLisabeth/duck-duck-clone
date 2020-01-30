@@ -14,15 +14,15 @@
 </head>
 
 <body>
-<div id="black-section">
-  <div id="header">
+<div id="black-section" aria-label="black-background">
+  <div id="header" aria-label="header">
     <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg"> <!--aligning menu to the right with flexbox settings-->
-      <div class="col-xs-10 col-sm-10 col-md-10 col-lg-7 showcase-content"> <!-- specifying number of columns on the screen resizing -->
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 showcase-content"> <!-- specifying number of columns on the screen resizing -->
           <nav>
             <ul>
-             <li><button class="h-button"><a href="index.html"></a><i class="fa fa-twitter"></i></button></li>
-             <li><button class="h-button"><a href="#"></a><i class="fa fa-angle-down"></i></button></li>
-             <li><button class="h-button"><a href="#"></a><i class="fa fa-align-justify"></i></button></li>
+             <li><button aria-label="twitter button" class="h-button"><a href="index.html"></a><i class="fa fa-twitter"></i></button></li>
+             <li><button aria-label="social media button" class="h-button"><a href="#"></a><i class="fa fa-angle-down"></i></button></li>
+             <li><button aria-label="menu-button" class="h-button"><a href="#"></a><i class="fa fa-align-justify"></i></button></li>
             </ul>
           </nav>
         </div>
@@ -30,9 +30,9 @@
   </div>
   <div class="container">
     <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg"> <!--aligning menu to the right with flexbox settings-->
-      <div class="col-xs-10 col-sm-10 col-md-10 col-lg-7"> <!-- specifying number of columns on the screen resizing -->
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <!-- specifying number of columns on the screen resizing -->
         <div id="logo-wrap">
-          <a id="logo-homepage"><img src="https://duckduckgo.com/assets/logo_homepage_mobile.alt.v106.svg"></a>
+          <a aria-label="logo image" id="logo-homepage"><img src="https://duckduckgo.com/assets/logo_homepage_mobile.alt.v106.svg" alt="duck logo image"></a>
         </div>
           <form>
           <input class="search-box" type="text" name="query" id="query" autocomplete="off" tabindex="1" aria-label="Search box">
@@ -42,7 +42,7 @@
     </div>
   </div>
   <div id="side-section">
-    <aside id="sidebar">
+    <aside aria-label="a side info" id="sidebar">
      <h1>Privacy, simplified.</h1>
        <p>Add privacy protection to your browser. Search privately, block trackers, 
          secure connections, and more — all for free.
@@ -61,43 +61,39 @@
     </div>
     <div class=container>
      <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg"> <!--aligning menu to the right with flexbox settings-->
-     <div class="col-xs-10 col-sm-10 col-md-10 col-lg-7"> <!-- specifying number of columns on the screen resizing -->
+     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <!-- specifying number of columns on the screen resizing -->
      <div class="img-container">
-       <img src="https://duckduckgo.com/assets/home/landing/background-dark.svg">
+       <img src="https://duckduckgo.com/assets/home/landing/background-dark.svg" alt="lady on the couch">
      </div>
     </div>
    </div>
   </div>
 <div id="box-section">
-    <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg"> <!-- specifying layout on the screen when resizing-->
+    <div class="row center-xs center-sm center-md center-lg"> <!-- specifying layout on the screen when resizing-->
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> <!-- specifying number of columns on the screen resizing -->
-        <div class="img-container">
         <h1 class="box-header">How it Works</h1>
-           <section id="boxes">
-             <div class="box-container">
-               <div class="box">
-                 <img src="https://duckduckgo.com/assets/home/landing/icons/box.svg">
+          <div aria-label="boxes with info" id="boxes">
+             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 box">
+                 <img src="https://duckduckgo.com/assets/home/landing/icons/box.svg" alt="open box">
                  <h3>Add to Chrome</h3>
                  <p>Just a few clicks to install, and you're ready to go. It's that easy.</p>
                 </div>
-               <div class="box">
-                  <img src="https://duckduckgo.com/assets/home/landing/icons/browser.svg">
+               <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 box">
+                  <img src="https://duckduckgo.com/assets/home/landing/icons/browser.svg" alt="computer screen">
                  <h3>Browse as Usual</h3>
                  <p>We'll block hidden trackers and encrypt connections to keep you more private.</p>
                  </div>
-               <div class="box">
-                  <img src="https://duckduckgo.com/assets/home/landing/icons/shield.svg">
+               <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 box">
+                  <img src="https://duckduckgo.com/assets/home/landing/icons/shield.svg" alt="protection shield">
                  <h3>Enjoy Please of Mind</h3>
                  <p>DuckDuckGo Privacy Essentials protects your privacy, wherever the Internet takes you.</p>
-                  </div>
-              </div>
-            </section>
-           </div>
-       </div>
-     </div>
-    </div>
+               </div>
+            </div>
+        </div>
+      </div>
   </div>
-<div id="green-section">
+</div>
+<div aria-label="green background" id="green-section">
   <div class="green-content">
     <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -105,13 +101,13 @@
         <p>Our privacy policy is simple: we don’t collect or share any of your personal information.</p>
         <button class="green-button" type="submit" name="button" aria-label="Add DuckDuckGo to Chrome"><a href="#">Add DuckDuckGo to Chrome</a></button>
         <div class="img-container">
-         <img src="https://duckduckgo.com/assets/onboarding/bathroomguy/1-monster-v2--pre-animation.svg">
+         <img src="https://duckduckgo.com/assets/onboarding/bathroomguy/1-monster-v2--pre-animation.svg" alt="lady in the laboratory burning info with dragon fire cartoon">
        </div>
       </div>
      </div>
     </div>
 </div>
-<div id="orange-section">
+<div aria-label="orange background" id="orange-section">
   <div class="orange-content">
     <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -119,13 +115,13 @@
         <p>We don’t store your search history. We therefore have nothing to sell to advertisers that track you across the Internet.</p>
         <button class="orange-button" type="submit" name="button" aria-label="Add DuckDuckGo to Chrome"><a href="#">Add DuckDuckGo to Chrome</a></button>
         <div class="img-container">
-         <img src="https://duckduckgo.com/assets/onboarding/bathroomguy/2-ghost-v2.svg">
+         <img src="https://duckduckgo.com/assets/onboarding/bathroomguy/2-ghost-v2.svg" alt="lady running away from the ghost cartoon">
        </div>
       </div>
      </div>
     </div>
   </div>
-<div id="purple-section">
+<div aria-label="purple background" id="purple-section">
   <div class="purple-content">
     <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -133,26 +129,24 @@
         <p>Other search engines track your searches even when you’re in private browsing mode. We don’t track you — period.</p>
         <button class="purple-button" type="submit" name="button" aria-label="Add DuckDuckGo to Chrome"><a href="#">Add DuckDuckGo to Chrome</a></button>
         <div class="img-container">
-         <img src="https://duckduckgo.com/assets/onboarding/bathroomguy/3-bathtub-v2--pre-animation.svg">
+         <img src="https://duckduckgo.com/assets/onboarding/bathroomguy/3-bathtub-v2--pre-animation.svg" alt="person taking bubble bath cartoon">
        </div>
       </div>
      </div>
     </div>
 </div>
-<div id="blue-section">
+<div aria-label="blue background" id="blue-section">
   <div class="blue-content">
     <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <div>
-          <span class="dismiss"><a href="#">Dismiss forever</a></span>
+        <span aria-label="dismiss button" class="dismiss"><a href="#">Dismiss forever</a></span>
           <span>|</span>
-          <span class="search"><a href="#header">Back to search</a></span>
-          </div>
-        <h1>Switch to DuckDuckGo and take back your privacy!</h1>
+          <span aria-label="go back up button" class="search"><a href="#header">Back to search</a></span>
+         <h1>Switch to DuckDuckGo and take back your privacy!</h1>
         <p>No tracking, no ad targeting, just searching.</p>
         <button class="blue-button" type="submit" name="button" aria-label="Add DuckDuckGo to Chrome"><a href="#">Add DuckDuckGo to Chrome</a></button>
         <div class="img-container">
-         <img src="https://duckduckgo.com/assets/onboarding/bathroomguy/4-alpinist-v2.svg">
+         <img src="https://duckduckgo.com/assets/onboarding/bathroomguy/4-alpinist-v2.svg" alt="person with a flag on the top of the snowy mountain">
        </div>
       </div>
      </div>

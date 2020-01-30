@@ -18,7 +18,7 @@ body {
 nav {
     float: right;
     position: relative;
-    display: inline-block; 
+    display: block; 
 }
 
 nav ul li {
@@ -62,9 +62,9 @@ form {
     min-width: 26px;
     background-color: #333;
     color: #999;
-    font-size: 1.25em;
+    font-size: 1.85em;
     padding: 0 .64em;
-    width: 50%;
+    width: 70%;
     height: auto;
     min-height: 1.8em;
     margin-top: -1px;
@@ -82,7 +82,7 @@ form {
     min-width: 26px;
     background-color: #333;
     color: #999;
-    font-size: 1.25em;
+    font-size: 1.85em;
     padding: 0 .64em;
     height: auto;
     min-height: 1.8em;
@@ -101,7 +101,7 @@ form {
 }
   
 .container {
-    width: 90%;
+    width: 100%;
     margin: auto;
     overflow: hidden;}
 
@@ -119,21 +119,22 @@ aside#sidebar {
     display: block;
     color: #fff;
     float: left;
-    width: 300px;
+    width: 350px;
     margin: auto;
-    padding: 10px 10px 10px 60px;
+    padding: 10% 10px 10px 8%;
     line-height: 1.5em;
     text-align: left;
     overflow: hidden;
 }
 
 #sidebar h1 {
-    font-size: 26px;
+    font-size: 28px;
     margin-bottom: auto;
     padding: 0 0 14px;
     line-height: 1.5;
 }
 #sidebar p {
+    font-size: 15px;
     display: block;
     text-align: left;
     overflow: hidden;
@@ -182,34 +183,14 @@ aside#sidebar {
     vertical-align: baseline;
 }
 
-.box-container {
-     text-align: center;
-     color: #353748;
-     hyphens: auto;
-     margin: 0;
-     padding: 0;
-     border: 0;
-     font: inherit;
-     font-size: 100%;
-     vertical-align: baseline;
-     box-sizing: border-box;
-     display: flex;
-     justify-content: center;
-     width: 100%;
-     max-width: 1250px;
-     min-height: 340px;
+#boxes {
+    display:flex;
+    flex-direction: row;
+    align-items: flex-end;
 }
 
-.box-header {
-    font-weight: 800;
-    color: #eee;
-} 
 
- #boxes {
-     margin-top: 20px;
-}
-
- .box {
+.box {
     text-align: center;
     hyphens: auto;
     font: inherit;
@@ -228,8 +209,29 @@ aside#sidebar {
     background: #282828;
     box-shadow: 0 1px 3px rgba(0,0,0,0.5);
     color: #cccccc;
-    margin-right: 0;
 }
+
+ .box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    color: inherit;
+}
+.box p {
+    font-size: 17px;
+    line-height: 1.5;
+    color: inherit;
+}
+.box-header {
+    font-size: 22px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    color: inherit;
+    padding: 20px;
+    font-weight: 800;
+    color: #eeeeee;
+}
+
 
 #green-section {
     margin: 0;
@@ -500,7 +502,10 @@ aside#sidebar {
 }
 
 
-@media (max-width: 768px) {
+ 
+
+
+@media(max-width:500px){
     #header,
     #logo-wrap,
     form,
@@ -508,12 +513,19 @@ aside#sidebar {
     .green-content
     .orange-content
     .purple-content
-    .blue-content {
-      text-align: center;
+    .blue-content
+     {
+      
       width: 100%;
-      margin: 10px;
+      margin: 20px;    
     }
-     
+
+    #boxes {
+        
+        flex-direction: column;
+    }
 
 }
+
+    
  
