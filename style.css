@@ -169,9 +169,10 @@ aside#sidebar {
     text-decoration: none;
 }
 .img-container {
-    display: block;
-    margin-top: 30px;
+   display: block;
+   margin-top: 30px;
 }
+
 #box-section {
     margin: 0;
     padding: 0;
@@ -206,7 +207,7 @@ aside#sidebar {
 
  #boxes {
      margin-top: 20px;
- }
+}
 
  .box {
     text-align: center;
@@ -497,5 +498,22 @@ aside#sidebar {
     padding: 5px 5px;
     text-decoration: none;  
 }
-    
-        
+
+
+@media (max-width: 768px) {
+    #header,
+    #logo-wrap,
+    form,
+    aside#sidebar 
+    .green-content
+    .orange-content
+    .purple-content
+    .blue-content {
+      text-align: center;
+      width: 100%;
+      margin: 10px;
+    }
+     
+
+}
+ 
