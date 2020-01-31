@@ -179,14 +179,13 @@ aside#sidebar {
 }
 
  
-
-#boxes {
+#boxes  {
     display: flex;
-    align-items: row;
+    flex-direction: row;
     justify-content: space-around;
   }
-
   
+
 
 .box {
     text-align: center;
@@ -200,7 +199,7 @@ aside#sidebar {
     border-radius: 18px;
     border: 1px solid #282828;
     background: #282828;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    overflow: hidden;
     color: #cccccc;
 }
 
@@ -216,7 +215,7 @@ aside#sidebar {
     color: inherit;
 }
 .box-header {
-    font-size: 34px;
+    font-size: 30px;
     margin-top: 26px;
     margin-bottom: 20px;
     line-height: 1.1;
@@ -231,32 +230,43 @@ aside#sidebar {
     margin: 0;
     padding: 0;
     background: #58b792;
+    font: inherit;
+    vertical-align: baseline;
+    text-align: center;
    
 }
 
-.green-content h1 {
-    font-size: 34px;
-    line-height: 27px;
-    margin-top: 26px;
-    margin-bottom: 20px;
+.container h1 {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    font-size: 27px;
+    line-height: 48px;
     font-weight: 800;
-    padding: 20px;
+    padding: 0;
     color: #fff;
     text-shadow: 0 1px 4px rgba(0,0,0,0.1);
     display: block;
-  
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
 }
 
-.green-content p {
-    font-size: 20px;
+.container p {
+    display: block;
     color: #fff;
     display: block;
+    font: inherit;
+    font-size: 100%;
+    line-height: 1.35;
     padding-top: .25em;
     padding-bottom: .25em;
-    margin: 1em;
+    
    
 }
-.green-button {
+.button {
     
     position: relative;
     margin-bottom: 0;
@@ -278,7 +288,7 @@ aside#sidebar {
     text-shadow: none;   
 }     
        
-.green-button a {
+.button a {
     color: #fff;
     cursor: pointer;
     border: none;
@@ -298,117 +308,16 @@ aside#sidebar {
     text-align: center;
 }
 
-.orange-content h1 {
-    font-size: 34px;
-    line-height: 27px;
-    margin-top: 26px;
-    margin-bottom: 20px;
-    font-weight: 800;
-    padding: 20px;
-    color: #fff;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.1);
-    display: block;
-   
-}
-
-.orange-content p {
-    font-size: 20px;
-    color: #fff;
-    display: block;
-    padding-top: .25em;
-    padding-bottom: .25em;
-    margin: 1em;
-}
-.orange-button {
-    
-    position: relative;
-    margin-bottom: 0;
-    cursor: pointer;
-    box-sizing: content-box;
-    outline: none;
-    margin-top: 25px;
-    padding: 12px 16px;
-    text-decoration: none;
-    font-weight: 600;
-    line-height: 100%;
-    background: rgba(0,0,0,0.4) !important;
-    display: inline-block;
-    border-radius: 4px;
-    z-index: 10;
-    transition: background-color .15s ease-out;
-    border-color: transparent;
-    color: #eeeeee;
-    text-shadow: none;   
-}     
-       
-.orange-button a {
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    font-size: 17px;
-    padding: 5px 5px;
-    text-decoration: none; 
-} 
 
 #purple-section {
     margin: 0;
     padding: 0;
     background: #5f63bd;
-   
+    font: inherit;
+    vertical-align: baseline;
+    text-align: center;   
 }
 
-.purple-content h1 {
-    font-size: 34px;
-    line-height: 27px;
-    margin-top: 26px;
-    margin-bottom: 20px;
-    font-weight: 800;
-    padding: 20px;
-    color: #fff;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.1);
-    display: block;
-   
-}
-
-.purple-content p {
-    font-size: 20px;
-    color: #fff;
-    display: block;
-    padding-top: .25em;
-    padding-bottom: .25em;
-    margin: 1em;
-    
-}
-.purple-button {
-    
-    position: relative;
-    margin-bottom: 0;
-    cursor: pointer;
-    box-sizing: content-box;
-    outline: none;
-    margin-top: 25px;
-    padding: 12px 16px;
-    text-decoration: none;
-    font-weight: 600;
-    line-height: 100%;
-    background: rgba(0,0,0,0.4);
-    display: inline-block;
-    border-radius: 4px;
-    z-index: 10;
-    transition: background-color .15s ease-out;
-    border-color: transparent;
-    color: #eeeeee;
-    text-shadow: none;   
-}     
-       
-.purple-button a {
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    font-size: 17px;
-    padding: 5px 5px;
-    text-decoration: none;  
-}
 
 .dismiss a {
     color: rgba(0,0,0,0.5);
@@ -425,59 +334,9 @@ aside#sidebar {
     margin: 0;
     padding: 0;
     background: #87cef5;
-   }
-
-.blue-content h1 {
-    font-size: 34px;
-    line-height: 27px;
-    margin-top: 26px;
-    margin-bottom: 20px;
-    font-weight: 800;
-    padding: 20px;
-    color: #fff;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.1);
-    display: block;
-    
-}
-
-.blue-content p {
-    font-size: 20px;
-    color: #fff;
-    display: block;
-    padding-top: .25em;
-    padding-bottom: .25em;
-    margin: 1em;
-    
- 
-}
-.blue-button {
-    position: relative;
-    margin-bottom: 0;
-    cursor: pointer;
-    box-sizing: content-box;
-    outline: none;
-    margin-top: 25px;
-    padding: 12px 16px;
-    text-decoration: none;
-    font-weight: 600;
-    line-height: 100%;
-    background: rgba(0,0,0,0.4);
-    display: inline-block;
-    border-radius: 4px;
-    z-index: 10;
-    transition: background-color .15s ease-out;
-    border-color: transparent;
-    color: #eeeeee;
-    text-shadow: none;   
-}     
-       
-.blue-button a {
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    font-size: 17px;
-    padding: 5px 5px;
-    text-decoration: none;  
+    font: inherit;
+    vertical-align: baseline;
+    text-align: center; 
 }
 
 
@@ -514,17 +373,14 @@ aside#sidebar {
 
 }
 
-@media(max-width:700px){
-    #boxes .box {
-        float: left;
-        display: table;
-        text-align: center;
-        margin: 20px;
-        padding: 10px;
-        width: 60%;
-        height: auto;
-          
-    }
+@media only screen and (min-width: 75em)
+flexboxgrid.css:735
+.col-lg-4 {
+    ms-flex-preferred-size: 33.333%;
+    /* flex-basis: 33.333%; 
+      max-width: 33.333%;
+} (edited)
+    
 }
 
     
