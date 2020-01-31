@@ -173,13 +173,19 @@ aside#sidebar {
    display: block;
    margin-top: 30px;
 }
+ 
+#box-section{
+    background: linear-gradient(#1c1c1c 50%, #58b792 50%);
+}
 
-  #boxes .box {
-    float: left;
-    box-sizing: border-box;
-    display: table;
-    
+ 
+
+#boxes {
+    display: flex;
+    align-items: row;
+    justify-content: space-around;
   }
+
   
 
 .box {
@@ -210,11 +216,12 @@ aside#sidebar {
     color: inherit;
 }
 .box-header {
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 34px;
+    margin-top: 26px;
+    margin-bottom: 20px;
     line-height: 1.1;
     color: inherit;
-    padding: 20px;
+    padding: 30px;
     font-weight: 800;
     color: #eeeeee;
 }
@@ -228,12 +235,12 @@ aside#sidebar {
 }
 
 .green-content h1 {
-    font-size: 24px;
+    font-size: 34px;
     line-height: 27px;
-    margin-top: 16px;
-    margin-bottom: 15px;
+    margin-top: 26px;
+    margin-bottom: 20px;
     font-weight: 800;
-    padding: 0;
+    padding: 20px;
     color: #fff;
     text-shadow: 0 1px 4px rgba(0,0,0,0.1);
     display: block;
@@ -241,10 +248,12 @@ aside#sidebar {
 }
 
 .green-content p {
+    font-size: 20px;
     color: #fff;
     display: block;
     padding-top: .25em;
     padding-bottom: .25em;
+    margin: 1em;
    
 }
 .green-button {
@@ -273,9 +282,10 @@ aside#sidebar {
     color: #fff;
     cursor: pointer;
     border: none;
-    font-size: 15px;
+    font-size: 17px;
     padding: 5px 5px;
-    text-decoration: none;  
+    text-decoration: none; 
+    margin: 1em; 
 }
 
 #orange-section {
@@ -289,12 +299,12 @@ aside#sidebar {
 }
 
 .orange-content h1 {
-    font-size: 24px;
+    font-size: 34px;
     line-height: 27px;
-    margin-top: 16px;
-    margin-bottom: 15px;
+    margin-top: 26px;
+    margin-bottom: 20px;
     font-weight: 800;
-    padding: 0;
+    padding: 20px;
     color: #fff;
     text-shadow: 0 1px 4px rgba(0,0,0,0.1);
     display: block;
@@ -302,11 +312,12 @@ aside#sidebar {
 }
 
 .orange-content p {
+    font-size: 20px;
     color: #fff;
     display: block;
     padding-top: .25em;
     padding-bottom: .25em;
-  
+    margin: 1em;
 }
 .orange-button {
     
@@ -334,7 +345,7 @@ aside#sidebar {
     color: #fff;
     cursor: pointer;
     border: none;
-    font-size: 15px;
+    font-size: 17px;
     padding: 5px 5px;
     text-decoration: none; 
 } 
@@ -347,12 +358,12 @@ aside#sidebar {
 }
 
 .purple-content h1 {
-    font-size: 24px;
+    font-size: 34px;
     line-height: 27px;
-    margin-top: 16px;
-    margin-bottom: 15px;
+    margin-top: 26px;
+    margin-bottom: 20px;
     font-weight: 800;
-    padding: 0;
+    padding: 20px;
     color: #fff;
     text-shadow: 0 1px 4px rgba(0,0,0,0.1);
     display: block;
@@ -360,11 +371,12 @@ aside#sidebar {
 }
 
 .purple-content p {
+    font-size: 20px;
     color: #fff;
     display: block;
     padding-top: .25em;
     padding-bottom: .25em;
-   
+    margin: 1em;
     
 }
 .purple-button {
@@ -393,7 +405,7 @@ aside#sidebar {
     color: #fff;
     cursor: pointer;
     border: none;
-    font-size: 15px;
+    font-size: 17px;
     padding: 5px 5px;
     text-decoration: none;  
 }
@@ -416,24 +428,25 @@ aside#sidebar {
    }
 
 .blue-content h1 {
-    font-size: 24px;
+    font-size: 34px;
     line-height: 27px;
-    margin-top: 16px;
-    margin-bottom: 15px;
+    margin-top: 26px;
+    margin-bottom: 20px;
     font-weight: 800;
-    padding: 0;
+    padding: 20px;
     color: #fff;
     text-shadow: 0 1px 4px rgba(0,0,0,0.1);
     display: block;
     
-    
 }
 
 .blue-content p {
+    font-size: 20px;
     color: #fff;
     display: block;
     padding-top: .25em;
     padding-bottom: .25em;
+    margin: 1em;
     
  
 }
@@ -462,7 +475,7 @@ aside#sidebar {
     color: #fff;
     cursor: pointer;
     border: none;
-    font-size: 15px;
+    font-size: 17px;
     padding: 5px 5px;
     text-decoration: none;  
 }
