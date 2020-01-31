@@ -64,7 +64,7 @@ form {
     color: #999;
     font-size: 1.85em;
     padding: 0 .64em;
-    width: 70%;
+    width: 60%;
     height: auto;
     min-height: 1.8em;
     margin-top: -1px;
@@ -174,33 +174,20 @@ aside#sidebar {
    margin-top: 30px;
 }
 
-#box-section {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
-}
-
-#boxes {
-    display:flex;
-    flex-direction: row;
-    align-items: flex-end;
-}
-
+  #boxes .box {
+    float: left;
+    box-sizing: border-box;
+    display: table;
+    
+  }
+  
 
 .box {
     text-align: center;
-    hyphens: auto;
-    font: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
     box-sizing: border-box;
     width: 330px;
     min-height: 340px;
-    display: flex;
-    flex-direction: column;
+    display: block;
     align-items: center;
     margin: 0 17.5px;
     padding: 20px 25px;
@@ -513,18 +500,39 @@ aside#sidebar {
     .green-content
     .orange-content
     .purple-content
-    .blue-content
-     {
-      
-      width: 100%;
-      margin: 20px;    
+    .blue-content {
+        float: none;
+        text-align: center;
+        width: 100%;
     }
 
-    #boxes {
-        
+     #boxes .box {
+        float: left;
         flex-direction: column;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        width: 80%;
+        height: auto;
+          
     }
+    header {
+        padding-bottom: 5px;
+      }
 
+}
+
+@media(max-width:700px){
+    #boxes .box {
+        float: left;
+        display: table;
+        text-align: center;
+        margin: 20px;
+        padding: 10px;
+        width: 60%;
+        height: auto;
+          
+    }
 }
 
     
