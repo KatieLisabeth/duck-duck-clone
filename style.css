@@ -237,10 +237,7 @@ aside#sidebar {
     color: #fff;
     text-shadow: 0 1px 4px rgba(0,0,0,0.1);
     display: block;
-    margin-inline-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  
 }
 
 .green-content p {
@@ -248,10 +245,7 @@ aside#sidebar {
     display: block;
     padding-top: .25em;
     padding-bottom: .25em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+   
 }
 .green-button {
     
@@ -304,10 +298,7 @@ aside#sidebar {
     color: #fff;
     text-shadow: 0 1px 4px rgba(0,0,0,0.1);
     display: block;
-    margin-inline-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+   
 }
 
 .orange-content p {
@@ -315,10 +306,7 @@ aside#sidebar {
     display: block;
     padding-top: .25em;
     padding-bottom: .25em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  
 }
 .orange-button {
     
@@ -368,10 +356,7 @@ aside#sidebar {
     color: #fff;
     text-shadow: 0 1px 4px rgba(0,0,0,0.1);
     display: block;
-    margin-inline-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+   
 }
 
 .purple-content p {
@@ -379,10 +364,8 @@ aside#sidebar {
     display: block;
     padding-top: .25em;
     padding-bottom: .25em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+   
+    
 }
 .purple-button {
     
@@ -442,10 +425,8 @@ aside#sidebar {
     color: #fff;
     text-shadow: 0 1px 4px rgba(0,0,0,0.1);
     display: block;
-    margin-inline-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    
+    
 }
 
 .blue-content p {
@@ -453,10 +434,8 @@ aside#sidebar {
     display: block;
     padding-top: .25em;
     padding-bottom: .25em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    
+ 
 }
 .blue-button {
     position: relative;
