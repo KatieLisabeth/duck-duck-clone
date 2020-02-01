@@ -34,6 +34,7 @@ nav ul li {
     font-size: 25px;
     padding: 8px 20px;
 }
+
 #logo-wrap {
     display: flex;
     align-items: center;
@@ -51,6 +52,7 @@ nav ul li {
     flex-basis: auto;
     margin: 0 0 20px;
 }
+
 form {
     padding: 0;
     font: inherit;
@@ -133,13 +135,13 @@ aside#sidebar {
     padding: 0 0 14px;
     line-height: 1.5;
 }
+
 #sidebar p {
     font-size: 15px;
     display: block;
     text-align: left;
     overflow: hidden;
     text-overflow: ellipsis; 
-
 }
 
 .side-button {
@@ -159,6 +161,7 @@ aside#sidebar {
     font-weight: normal;
     border-radius: 10px;
     white-space: normal;
+    color: #eee;
 }
 
 .side-button a {
@@ -169,6 +172,7 @@ aside#sidebar {
     padding: 5px 5px;
     text-decoration: none;
 }
+
 .img-container {
    display: block;
    margin-top: 30px;
@@ -177,7 +181,6 @@ aside#sidebar {
 #box-section{
     background: linear-gradient(#1c1c1c 50%, #58b792 50%);
 }
-
  
 #boxes  {
     display: flex;
@@ -185,13 +188,11 @@ aside#sidebar {
     justify-content: space-around;
   }
   
-
-
 .box {
     text-align: center;
     box-sizing: border-box;
-    width: 330px;
-    min-height: 340px;
+    max-width: 330px;
+    max-height: 340px;
     display: block;
     align-items: center;
     margin: 0 17.5px;
@@ -203,17 +204,19 @@ aside#sidebar {
     color: #cccccc;
 }
 
- .box h3 {
+.box h3 {
     font-size: 22px;
     margin-bottom: 10px;
     line-height: 1.1;
     color: inherit;
 }
+
 .box p {
     font-size: 17px;
     line-height: 1.5;
     color: inherit;
 }
+
 .box-header {
     font-size: 30px;
     margin-top: 26px;
@@ -225,49 +228,83 @@ aside#sidebar {
     color: #eeeeee;
 }
 
-
 #green-section {
     margin: 0;
     padding: 0;
     background: #58b792;
-    font: inherit;
     vertical-align: baseline;
     text-align: center;
    
+} 
+
+#orange-section {
+    margin: 0;
+    padding: 0;
+    background: #f5a339;;
+    font: inherit;
+    vertical-align: baseline;
+    text-align: center;
+}
+
+#purple-section {
+    margin: 0;
+    padding: 0;
+    background: #5f63bd;
+    vertical-align: baseline;
+    text-align: center;  
+}
+
+#blue-section {
+    margin: 0;
+    padding: 0;
+    background: #87cef5;
+    vertical-align: baseline;
+    text-align: center; 
+}
+
+.ds-btn {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+}
+
+.dismiss a {
+    color: rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.search a {
+    cursor: pointer;
+    color: rgba(0,0,0,0.7);
+    font-weight: bold;
 }
 
 .container h1 {
-    display: block;
-    margin-top: 16px;
+    margin-top: 25px;
     margin-bottom: 15px;
-    font-size: 27px;
-    line-height: 48px;
+    font-size: 28px;
+    line-height: 38px;
     font-weight: 800;
     padding: 0;
     color: #fff;
     text-shadow: 0 1px 4px rgba(0,0,0,0.1);
-    display: block;
     width: 80%;
     max-width: 700px;
-    margin: 0 auto;
     display: inline-block;
     position: relative;
 }
 
 .container p {
+    font-weight: 300;
+    font-size: 17px;
     display: block;
     color: #fff;
-    display: block;
-    font: inherit;
-    font-size: 100%;
-    line-height: 1.35;
-    padding-top: .25em;
-    padding-bottom: .25em;
+    text-align: center;
     
-   
 }
+
 .button {
-    
+    font-size: 17px;
     position: relative;
     margin-bottom: 0;
     cursor: pointer;
@@ -285,64 +322,19 @@ aside#sidebar {
     transition: background-color .15s ease-out;
     border-color: transparent;
     color: #eeeeee;
-    text-shadow: none;   
-}     
+    text-shadow: none;       
+}    
        
 .button a {
-    color: #fff;
+    color: #eee;
     cursor: pointer;
-    border: none;
-    font-size: 17px;
+    font-size: 12px;
     padding: 5px 5px;
-    text-decoration: none; 
-    margin: 1em; 
-}
-
-#orange-section {
-    margin: 0;
-    padding: 0;
-    background: #f5a339;;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
-    text-align: center;
-}
-
-
-#purple-section {
-    margin: 0;
-    padding: 0;
-    background: #5f63bd;
-    font: inherit;
-    vertical-align: baseline;
-    text-align: center;   
-}
-
-
-.dismiss a {
-    color: rgba(0,0,0,0.5);
-    cursor: pointer;
-}
-
-.search a {
-    cursor: pointer;
-    color: rgba(0,0,0,0.7);
-    font-weight: bold;
-}
-
-#blue-section {
-    margin: 0;
-    padding: 0;
-    background: #87cef5;
-    font: inherit;
-    vertical-align: baseline;
-    text-align: center; 
+    text-decoration: none;  
 }
 
 
  
-
-
 @media(max-width:500px){
     #header,
     #logo-wrap,
@@ -357,8 +349,8 @@ aside#sidebar {
         width: 100%;
     }
 
-     #boxes .box {
-        float: left;
+     #boxes {
+        float: flex;
         flex-direction: column;
         text-align: center;
         margin: 10px;
@@ -371,17 +363,20 @@ aside#sidebar {
         padding-bottom: 5px;
       }
 
+     .button {
+        margin-top: 15px;
+        font-size: 16px;
+     }
+
+
 }
 
-@media only screen and (min-width: 75em)
-flexboxgrid.css:735
-.col-lg-4 {
-    ms-flex-preferred-size: 33.333%;
-    /* flex-basis: 33.333%; 
-      max-width: 33.333%;
-} (edited)
+
+@media (max-height: 590px), (max-width: 700px) {
+.container h1 {
+    margin-top: 16px;
+    font-size: 24px;
+    line-height: 27px;
+}
     
 }
-
-    
- 
